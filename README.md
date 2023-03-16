@@ -16,7 +16,7 @@ it renders
 5.DetailCountryView
 
 # Screenshot
-![](./public/assets/screenshot.jpg)
+./public/assets/screenshot.jpg
 
 
 

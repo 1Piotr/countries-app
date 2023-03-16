@@ -26,7 +26,7 @@ const DetailedCountryView = ({countries, countryCode, HandleCountryView, darkMod
             <div className="view">
                 <div>
                     <button className={darkMode ? 'back element dark' : ' back element light'} onClick={Back}>
-                    <sup style={{verticalAlign:'top', fontSize:20}}>&larr;</sup> Back</button>
+                    <sup style={{verticalAlign:'bottom', fontSize:20}}>&larr;</sup> Back</button>
                 </div>
                 <div className="countryDetail" style={{display:'flex'}}>   
                     <div style={{display:'flex'}}>

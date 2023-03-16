@@ -25,7 +25,7 @@ it renders
 # Screenshot
 
 
-![](./public/assets/screenshot.jpg)
+(./public/assets/screenshot.jpg)
 
 
 

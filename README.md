@@ -25,7 +25,7 @@ it renders
 # Screenshot
 
 
-https://github.com/1Piotr/countries-app/blob/master/public/assets/screenshot.jpeg
+(https://github.com/1Piotr/countries-app/blob/master/public/assets/screenshot.jpeg)
 
 
 

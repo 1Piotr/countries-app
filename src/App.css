@@ -99,9 +99,10 @@ main {
 .myDropdown label {
   border:none;
   width: 150px;
-  height: 28px;
+  height: 35px;
   display: block;
   padding-left: 10px; 
+  font-size: 1rem;
 }
 
 .myDropdown > button {

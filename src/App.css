@@ -228,7 +228,7 @@ input:focus{
   height:35px;
 }
 .mySearch input {
-  appearance: none;
+  
   border: none;
   border-radius: 5px;
   height:35px;
@@ -238,6 +238,7 @@ input:focus{
   height:35px;
   width:40px;
   border:none; 
+  border-radius: 5px 0px 0px 5px;
   
 }
 .searchIcon {

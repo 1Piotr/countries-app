@@ -1,38 +1,353 @@
-.App {
-  text-align: center;
+/* Styling Color theme*/
+:root {
+  --darkModeElements:hsl(209, 23%, 22%);
+  --darkModeBackground: hsl(207, 26%, 17%);
+  --lightModeText:hsl(200, 15%, 8%);
+  --lightModeInput:hsl(0, 0%, 52%);
+  --lightModeBackground:hsl(0, 0%, 98%);
+  --darkModeText:hsl(0, 0%, 100%);
+  --lightModeElements: hsl(0, 0%, 100%);
+}
+.backgroundLight {
+  background-color: var(--lightModeBackground);
+  color:  var(--lightModeText);
+
+}  
+.backgroundDark {
+  background-color: var(--darkModeBackground);
+  color:  var(--darkModeText);
+  
+}  
+.element.dark, .element.dark button,.element.dark::placeholder {
+  
+  background-color: var(--darkModeElements);
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.element.light, .element.light button, .element.light::placeholder {
+  background-color: white;
+  color:  var(--lightModeText);
+
+}
+ .countryButton.element.light, .back.element.light {
+  box-shadow: 1px 1px 2px 1px var(--lightModeInput);
+}
+.countryButton.element.dark,.back.element.dark {
+  box-shadow: 1px 1px 2px 1px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
+/*resettting buttons deafult design*/  
+button {
+  border:none;
+}
+/*Styling App*/
+
+.app {
+ 
+ height:auto;
+ min-height: 100vh;
+  max-width: 100vw;
+}
+main {
+  max-width: 100vw;
+  
+  
+}
+.app ul  {
+  display:flex;
+  justify-content:space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  margin:0;
+  padding: 0;
+  max-width:100vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  column-gap:6vw;
+  
+}
+.filter {
+  max-width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  
+ 
+}
+.filter * {
+  font-size: 0.8rem;
+  
+}
+/*Styling MyDropdown*/
+.myDropdown {
+  position: relative;
+  
+  
+}
+.myDropdown form {
+  position: absolute;
+  z-index:10;
+  
+  padding-top: 7px;
+  
+}
+.myDropdown label {
+  border:none;
+  width: 150px;
+  height: 28px;
+  display: block;
+  padding-left: 10px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.myDropdown > button {
+  margin-bottom: 5px;
+  border-radius:5px;
+  height:35px;
+  text-align: left;
+  text-indent: 10px;
+  
+}
+
+.myDropdown > * {
+  border-radius:5px;
+  width: 150px;
+  
+}
+input[type="checkbox"]{
+  appearance: none;
+}
+input[type="checkbox"]:checked::before {
+  /* Show the checkmark when the checkbox is checked */
+  content: "\2713";
+}
+.myDropdown input {
+  border:none;
+}
+.myDropdown span {
+  float: right;
+}
+
+ /*Styling MyToggle*/
+
+ .myToggle {
+  display:flex;
+  max-width:100vw;
+  height:10vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  padding-left: 7vw;
+  padding-right: 7vw;
+  
+ }
+ .myToggle h3 {
+
+  margin:0;
+ }
+ .myToggle span {
+  display: inline-block;
+  transform: rotate(-27deg)
+ }
+/*Styling basicCountryView*/
+
+.basicCountryView {
+  flex-basis: 18%;
+  min-height:5%;
+  max-height:200px;
+  min-width: 150px;
+  margin-bottom: 4%;
+  font-size: 0.6rem;
+  border-radius: 5px;
+  
+}
+.basicCountryView img {
+  width:100%;
+  height:50%;
+  border-radius: 5px 5px 0 0;
+  
+}
+.basicCountryView p {
+  margin:0;
+  padding:0;
+  padding-left:10px;
+}
+.basicCountryView h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:10px;
+}
+/*Styling DetailedCountryView*/
+.detailedView, .view{
+  width:100%;
 }
 
-.App-link {
-  color: #61dafb;
+.countryDetail {
+  width:100%;
+  
+}
+.countryDetail p, h2 {
+  margin:0;
+}
+.countryDetail img {
+  width:80%
+}
+.countryDetail > div {
+  flex-basis: 50%;
+}
+.rightView{
+  padding-top: 20px;
+  width:50%;
+  flex-wrap: wrap;
+ 
+}
+.details {
+  flex-basis: 50%;
+}
+.countryName {
+  flex-basis: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3 {
+  margin:0;
+}
+/*Styling MySearch*/
+ 
+input:focus{
+  outline: none;
+}
+.mySearch {
+  display: flex ;
+  height:35px;
+}
+.mySearch input {
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+  height:35px;
+  width:200px;}
+.mySearch button {
+  
+  height:35px;
+  width:40px;
+  border:none; 
+  
+}
+.searchIcon {
+  display: inline-block;
+  transform: rotate(-45deg);
+  font-size: 20px;
+}
+
+/*Detail Country View*/
+.view {
+  padding-left: 7vw;
+  padding-right: 7vw;
+  font-size: 0.8rem;
+}
+
+.view p {
+  padding-bottom:5px ;
+}
+.view span {
+  font-weight: 600;
+}
+.view button {
+
+  width: fit-content;
+  height:20px;
+  margin-left: 5px;
+  border-radius:2px;
+  
+
+}
+
+.borderCountries {
+  display:inline-flex;
+  flex-wrap:wrap;
+  flex-basis:100%;
+  align-items: center;
+  
+}
+.borderCountries p {
+  padding-bottom: 0;
+}
+button.back {
+ 
+  width: 100px;
+  height:28px;
+  margin-top:40px;
+  margin-bottom:40px;
+  border-radius:2px;
+  margin-left: 0;
+
+}
+
+/* Responsive design*/
+@media screen and (max-width: 576px) {
+  .detailedView {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .countryDetail{
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:auto;
+
   }
+  .rightDetails{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height:auto;
+
+  }
+  .rightView {
+    width:100%
+  }
+
+  .rightView h2, .rightDetails>*, .borderCountries{
+    padding-bottom: 20px;
+  }
+  .borderCountries p {
+    flex-basis: 100%;
+  }
+  .borderCountries button {
+    margin-left: 0;
+    margin-right:3px;
+    margin-top:5px
+  }
+  .basicCountryView {
+    flex-basis: 100%;
+    min-height: 250px;
+  }
+  .myDropdown  {
+    margin-top: 15px;
+  }
+  .app ul {
+    padding-left: 20vw;
+    padding-right:20vw;
+    
+  }
+  .filter {
+    flex-direction:  column
+  }
+  .mySearch {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 800px){
+ .app ul {
+    justify-content:space-around;
+}
+.basicCountryView img {
+  height:60%;
+}
 }

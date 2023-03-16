@@ -9,13 +9,22 @@ restricting api calls.
 # There will be  seven components
 
 1.MyToggle  - component changing mode dark/Light, also I will plce 
+
+
 2.MySearch - input filed + search button
+
+
 3.MyDropdown - custom dropdown as I dont want to use <select> as there are problems with controlling hoe 
+
 it renders
+
 4.BascicCountryView - I'll use this component to render list of countries
+
 5.DetailCountryView
 
 # Screenshot
+
+
 ![](./public/assets/screenshot.jpg)
 
 

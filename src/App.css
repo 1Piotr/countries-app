@@ -164,7 +164,7 @@ input[type="checkbox"]:checked::before {
   max-height:200px;
   min-width: 150px;
   margin-bottom: 4%;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   border-radius: 5px;
   
 }
@@ -351,5 +351,6 @@ button.back {
 }
 .basicCountryView img {
   height:60%;
+  font-size: 0.8rem;
 }
 }

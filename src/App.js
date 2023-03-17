@@ -27,6 +27,7 @@ const App = () => {
   const HandleCountryView= (countryCode) => {
     setsingleCountryView(!singleCountryView)
     setCountryCode(countryCode)
+    setSearchedCountries(countries)
 
   }
   
